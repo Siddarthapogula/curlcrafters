@@ -15,7 +15,7 @@ const quizSchema = new mongoose.Schema({
      ref: 'User'
      },
     score: { 
-        type: Number, 
+        type: [Number], 
         required: true
      },
   });

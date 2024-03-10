@@ -12,7 +12,8 @@ const signUpBody = zod.object({
 })
 
 router.post("/signup", async (req, res)=>{
-    console.log("reached");
+    console.log(req.body);
+    
     const {success} = signUpBody.safeParse(req.body);
     
     if(!success){
@@ -34,10 +35,7 @@ router.post("/signup", async (req, res)=>{
         username : req.body.username,
         email : req.body.email,
         password : req.body.password
-    })
-
-    const userId = user._id;
-  
+    })  
 
     const token = jwt.sign({
         userId : user._id
