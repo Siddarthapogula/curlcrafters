@@ -18,12 +18,12 @@ Features
 List the main features of your application:
 
 User signup and login using my own backend authentication
-Authorization with Firebase tokens
-Quiz with 8-10 objective questions
+Quiz with 15 objective questions
 Countdown timer for each question
 Display user score at the end of the quiz
 Global state management with Redux Toolkit
-Backend API with Express.js and MongoDB/PostgreSQL
+Backend API with Express.js and MongoDB
+
 Tech Stack
 React
 Redux Toolkit
